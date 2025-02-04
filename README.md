@@ -26,15 +26,22 @@ This project is a Student Attendance System that uses Face Recognition to mark a
 
 ### Steps
 1. Clone the repository:
-`git clone https://github.com/chantharith-NY/student_attendance_record.git`
-`cd student_attendance_record`
-2. Import the database:
+```
+git clone https://github.com/chantharith-NY/student_attendance_record.git
+cd student_attendance_record
+```
+3. Import the database:
 - Open **phpMyAdmin**
 - Create a database named `attendance_system`
 - Import the `install.sql`
 3. Configure database connection:
 - Open `config/db.php`and update credentials:
-`$host = "localhost";\n$user = "root";\n$password = "";\n$dbname = "attendance_system";`
+```
+$host = "localhost";
+$user = "root";
+$password = "";
+$dbname = "attendance_system";
+```
 4. Start the local server:
 - Open XAMPP/WAMP/MAMP
 - Start **Apache** and **MySQL**
