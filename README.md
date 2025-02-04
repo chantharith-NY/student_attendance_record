@@ -18,6 +18,24 @@ This project is a Student Attendance System that uses Face Recognition to mark a
 - Database: MySQL
 - Face Recognition: OpenCV (can be integrated with Python for processing)
 
+## Project Structure
+```
+student-attendance-face-php/
+│── config/
+│   ├── db.php  # Database connection
+│── includes/
+│   ├── header.php  # Common header
+│   ├── footer.php  # Common footer
+│── public/
+│   ├── images/  # Store student images
+│── src/
+│   ├── register.php  # Register students
+│   ├── attendance.php  # Mark attendance
+│── index.php  # Main dashboard
+│── install.sql  # Database schema
+│── README.md  # Project documentation
+```
+
 ## Installation & Setup
 ### Prerequisites
 - XAMPP/WAMP for running PHP and MySQL locally
