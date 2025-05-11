@@ -43,7 +43,12 @@ php backend/db/init_db.php
 php -S localhost:8000 -t backend
 ```
 
-4. Run web
+4. Install npm
+```
+npm install
+```
+
+5.Run web
 ```
 npm run dev
 ```
