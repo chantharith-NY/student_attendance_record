@@ -1,0 +1,135 @@
+/* Global styles for the application */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #DDFEF8;
+}
+
+header {
+  background-color: #23194F;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 4rem; /* Adjusted to be below the header */
+  left: 0;
+  width: 100%;
+  z-index: 40;
+}
+
+nav a {
+  color: #23194F;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-top: 8rem; /* Adjusted to account for fixed header and navbar */
+}
+
+button {
+  background-color: #23194F;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 33px;
+}
+
+button:hover {
+  background-color: #1e1642;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #23194F;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Ensure search field and button stay in the same row */
+.search-container {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.5rem; /* Add spacing between the input and button */
+}
+
+.search-container input {
+  flex: 1; /* Make the input take up available space */
+}
+
+.submit-button {
+  display: block;
+  margin: 1rem auto; /* Center the button horizontally */
+  text-align: center;
+}
+
+.admin-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 1rem; /* Add spacing between the buttons */
+  justify-items: center; /* Center the buttons within their grid cells */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around; /* Distribute buttons with space between them */
+  align-items: center; /* Align buttons vertically */
+  gap: 1rem; /* Add spacing between buttons if needed */
+}
