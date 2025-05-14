@@ -85,13 +85,28 @@ export default function Student() {
             </table>
 
             <h2 className="text-2xl font-bold text-[#23194F] mt-6 mb-6">Attendance</h2>
-            <ul>
-              {attendance.slice(0, 10).map((record, index) => (
-                <li key={index} className="mb-2">
-                  <span className="font-bold">{record.timestamp}</span> - {record.status}
-                </li>
-              ))}
-            </ul>
+            <table className="table-auto w-full border-collapse border border-gray-300">
+              <thead>
+                <tr>
+                  <th className="border border-gray-300 px-4 py-2">Date</th>
+                  <th className="border border-gray-300 px-4 py-2">Room</th>
+                  <th className="border border-gray-300 px-4 py-2">Teacher</th>
+                  <th className="border border-gray-300 px-4 py-2">Subject</th>
+                  <th className="border border-gray-300 px-4 py-2">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {attendance.slice(0, 10).map((record, index) => (
+                  <tr key={index}>
+                    <td className="border border-gray-300 px-4 py-2">{record.timestamp}</td>
+                    <td className="border border-gray-300 px-4 py-2">{record.room}</td>
+                    <td className="border border-gray-300 px-4 py-2">{record.teacher}</td>
+                    <td className="border border-gray-300 px-4 py-2">{record.subject}</td>
+                    <td className="border border-gray-300 px-4 py-2">{record.status}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         );
       case 'schedule':
