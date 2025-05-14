@@ -53,6 +53,12 @@ npm install
 npm run dev
 ```
 
+## File Structure
+```
+
+
+```
+
 ## Usage
 - Admin Login: Access the admin dashboard to manage students and attendance.
 - Student Registration: Add student details along with face image.
