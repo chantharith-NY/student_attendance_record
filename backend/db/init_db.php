@@ -12,11 +12,18 @@ try {
         photo_path TEXT NOT NULL
     )");
 
-    // Create attendance table
-    $db->exec("CREATE TABLE IF NOT EXISTS attendance (
+    // Drop the old attendance table if it exists
+    $db->exec("DROP TABLE IF EXISTS attendance;");
+
+    // Create the updated attendance table
+    $db->exec("CREATE TABLE attendance (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         student_id INTEGER,
         timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+        room TEXT NOT NULL,
+        teacher TEXT NOT NULL,
+        subject TEXT NOT NULL,
+        status TEXT NOT NULL CHECK(status IN ('Present', 'Absent', 'Late')),
         FOREIGN KEY(student_id) REFERENCES students(id)
     )");
 
