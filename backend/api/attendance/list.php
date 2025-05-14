@@ -1,6 +1,6 @@
 <?php
 
-require_once '../../lib/db.php';
+require_once __DIR__ . '/../../lib/db.php';
 
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, OPTIONS');
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 try {
     $db = getDatabaseConnection();
 
-    $stmt = $db->query('SELECT attendance.id, students.name AS student_name, attendance.timestamp 
+    $stmt = $db->query('SELECT attendance.id, students.full_name AS student_name, attendance.timestamp 
                          FROM attendance 
                          JOIN students ON attendance.student_id = students.id');
     $attendance = $stmt->fetchAll(PDO::FETCH_ASSOC);
