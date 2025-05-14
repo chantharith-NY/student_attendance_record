@@ -1,0 +1,6 @@
+flask
+face-recognize
+face_recognition
+numpy
+opencv-python
+pillow_heif
