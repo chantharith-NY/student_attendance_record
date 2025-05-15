@@ -1,0 +1,86 @@
+# ====================
+# Python
+# ====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyInstaller
+*.spec
+
+# MyPy and Pyright
+.mypy_cache/
+.pyright/
+
+# Unit test / coverage
+.coverage
+.tox/
+.noseids
+.pytest_cache/
+htmlcov/
+
+# Django/Flask
+*.log
+instance/
+*.sqlite3
+*.db
+db.sqlite3
+
+# VSCode
+.vscode/
+
+# ====================
+# PHP
+# ====================
+vendor/
+composer.lock
+composer.phar
+
+# Laravel
+.env
+.env.*
+Homestead.yaml
+Homestead.json
+/storage/*.key
+/storage/oauth-private.key
+/storage/oauth-public.key
+
+# PHPUnit
+.phpunit.result.cache
+
+# Laravel IDE Helper
+.phpstorm.meta.php
+
+# ====================
+# Common
+# ====================
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Node (if you use it for frontend)
+node_modules/
+package-lock.json
+yarn.lock
